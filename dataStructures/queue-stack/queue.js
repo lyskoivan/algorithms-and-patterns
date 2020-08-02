@@ -1,7 +1,7 @@
-var queue = []; // []
-queue.push("first"); // queue === ["first"]
+let queue = []; // []
+queue.push('first'); // queue === ["first"]
 queue.push(10, 20); // queue === ["first", 10, 20]
-var el = queue.shift(); // queue === [10, 20] && el === "first"
+let el = queue.shift(); // queue === [10, 20] && el === "first"
 queue.push(2); // queue === [10, 20, 2]
 el = queue.shift(); // queue === [20, 2] && el === 10
 el = queue.shift(); // queue === [2] && el === 20
