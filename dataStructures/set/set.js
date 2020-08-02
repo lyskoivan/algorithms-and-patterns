@@ -30,4 +30,28 @@ set.forEach((value, valueAgain, set) => {
   console.log(value);
 });
 
-//
+// WeakSet
+
+// WeakSet для учёта тех, кто посещал наш сайт
+
+let visitedSet = new WeakSet();
+
+let john = { name: 'John' };
+let pete = { name: 'Pete' };
+let mary = { name: 'Mary' };
+
+visitedSet.add(john); // John заходил к нам
+visitedSet.add(pete); // потом Pete
+visitedSet.add(john); // John снова
+
+// visitedSet сейчас содержит двух пользователей
+
+// проверим, заходил ли John?
+console.log(visitedSet.has(john)); // true
+
+// проверим, заходила ли Mary?
+console.log(visitedSet.has(mary)); // false
+
+john = null;
+
+// структура данных visitedSet будет очищена автоматически
