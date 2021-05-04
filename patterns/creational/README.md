@@ -1,3 +1,3 @@
-## Creational patterns
+## Creational patterns (Порождающие паттерны проектирования)
 
-These patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code.
+Эти паттерны отвечают за удобное и безопасное создание новых объектов или даже целых семейств объектов.
